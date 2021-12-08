@@ -18,15 +18,17 @@ public class Passenger {
     Passenger(int id) {
         id = idCounter++;//here the idCounter will be counting number of times passenger object is called.
     }
-    Passenger(){
+
+    Passenger() {
 
     }
-    public int  getPassengerMethod(){
+
+    public int getPassengerMethod() {
         return idCounter;//this method will return the number of times object is initialised.
     }
 
 
-    private static class Address {
+    private static class Address {//nested class Address
         private String addressStreet;
 
         public String getAddressStreet() {
@@ -50,7 +52,7 @@ public class Passenger {
         String addressState;
     }
 
-    private static class Contact {
+    private static class Contact {//nested class Contact
         private String name;
 
         public String getName() {
