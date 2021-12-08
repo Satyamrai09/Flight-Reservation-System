@@ -1,6 +1,6 @@
 package FlightReservationSystem;
 
-public  class TicketBooking {
+public abstract class TicketBooking{//using abstract keyword as the TicketBooking cannot be instantiated.
    private  String PNR;
    public String getPNR(){
        return PNR;
@@ -56,5 +56,15 @@ Passenger passenger;
     }
     TicketBooking(){
 
+    }
+    TicketBooking( String departureTime,String destination,String flightBooked,String dateOfDeparture,String dateOfArrival,String timeOfArrival,String timeOfDeparture, int seatNumber){
+this.departureTime=departureTime;
+this.destination=destination;
+this.flightBooked=flightBooked;
+this.dateOfDeparture=dateOfDeparture;
+this.dateOfArrival=dateOfArrival;
+this.timeOfArrival=timeOfArrival;
+this.timeOfDeparture=timeOfDeparture;
+this.seatNumber=seatNumber;
     }
 }

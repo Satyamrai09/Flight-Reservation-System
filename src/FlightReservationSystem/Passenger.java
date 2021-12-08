@@ -16,13 +16,13 @@ public class Passenger {
     private static int idCounter = 0;
 
     Passenger(int id) {
-        id = idCounter++;
+        id = idCounter++;//here the idCounter will be counting number of times passenger object is called.
     }
     Passenger(){
 
     }
     public int  getPassengerMethod(){
-        return idCounter;
+        return idCounter;//this method will return the number of times object is initialised.
     }
 
 

@@ -1,6 +1,9 @@
 package FlightReservationSystem;
 
-public class TouristTicket {
+ class TouristTicket extends TicketBooking {
+     TouristTicket() {
+         super();//parametrized constructor of parent class is called using super keyword.
+     }
     private String hotelAddress;
    private String touristLocation;
     public String getTouristLocation(){

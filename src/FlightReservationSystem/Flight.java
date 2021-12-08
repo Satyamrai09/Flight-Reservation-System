@@ -1,6 +1,7 @@
 package FlightReservationSystem;
 
 public class Flight {
+    //encapsulation using private access modifier.
    private long flightNumber;
     private String airlineOfFlight;
     private int capacityOfFlight;

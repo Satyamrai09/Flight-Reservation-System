@@ -1,6 +1,9 @@
 package FlightReservationSystem;
 
 public class RegularTicket extends TicketBooking {
+    RegularTicket(){
+        super();  //parametrized constructor of parent class is called using super keyword.
+    }
    private String Food;
 
     RegularTicket(String durationOfJourney) {
