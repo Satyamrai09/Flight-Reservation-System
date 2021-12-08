@@ -1,11 +1,22 @@
 package FlightReservationSystem;
 
 public class Flight {
-    long flightNumber;
-    String airlineOfFlight;
-    int capacityOfFlight;
-    int seatBooked;
-    int totalSeats;
+   private long flightNumber;
+    private String airlineOfFlight;
+    private int capacityOfFlight;
+   private  int seatBooked;
+   public int getSeatBooked(){
+       return seatBooked;
+   }
+   public void setSeatBooked(int seatBooked){
+       this.seatBooked=seatBooked;
+   }
+   private int totalSeats;
+
+    public Flight() {
+
+    }
+
     public  int availabilityOfSeats(int totalSeats, int seatBooked){
         int vacantSeats=totalSeats-seatBooked;
        return vacantSeats;

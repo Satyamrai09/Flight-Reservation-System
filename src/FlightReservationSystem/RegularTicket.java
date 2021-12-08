@@ -15,7 +15,7 @@ public class RegularTicket extends TicketBooking {
         this.Food=Food;
     }
 
-    String Water;
-    String Snacks;
+    private String Water;
+    private String Snacks;
 
 }
